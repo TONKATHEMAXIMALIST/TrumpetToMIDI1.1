@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+Target 'TrumpetToMIDI - All' in project 'TrumpetToMIDI'
+➜ Explicit dependency on target 'TrumpetToMIDI - AU' in project 'TrumpetToMIDI'
+➜ Explicit dependency on target 'TrumpetToMIDI - Shared Code' in project 'TrumpetToMIDI'
+Target 'TrumpetToMIDI - AU' in project 'TrumpetToMIDI'
+➜ Explicit dependency on target 'TrumpetToMIDI - Shared Code' in project 'TrumpetToMIDI'
+Target 'TrumpetToMIDI - Shared Code' in project 'TrumpetToMIDI' (no dependencies)

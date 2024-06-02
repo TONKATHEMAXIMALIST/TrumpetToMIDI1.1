@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		EAB46B64840539EEDAA415C8 /* TrumpetToMIDI - All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 97EBC9FFD4263D99A003655C /* Build configuration list for PBXAggregateTarget "TrumpetToMIDI - All" */;
+			buildPhases = (
+				E3D799992C0C4C53009B8952 /* CopyFiles */,
+			);
+			dependencies = (
+				6921F66DA09F79B582E43BC6 /* PBXTargetDependency */,
+				92D5024CC103BDBA9FC848FF /* PBXTargetDependency */,
+			);
+			name = "TrumpetToMIDI - All";
+			productName = TrumpetToMIDI;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0302CEE7BAF0245A292BBA85 /* include_juce_events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 423BD9E45B024620C744619D /* include_juce_events.mm */; };
+		04B8831F73D148384B59EB8E /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1638C6F95C0872DDC2E582E1 /* RecentFilesMenuTemplate.nib */; };
+		0D1D8BF807DC3F240F3AD1F0 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9504BBFBEEBC4D5E57A5380 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1D4DAFD3F1074920FEBC7AF5 /* include_juce_audio_formats.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0E46E5072FE03B7AA1FF9 /* include_juce_audio_formats.mm */; };
+		37DE6B88D38B31B35CDCC2BA /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0A53B9E29A8329D1506B73 /* AudioUnit.framework */; };
+		38046AFC5249D4E10C11AF09 /* include_juce_audio_processors_lv2_libs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3713347D9CDF5FBA3FA5DDCC /* include_juce_audio_processors_lv2_libs.cpp */; };
+		3FEB56715D005C8825962CEB /* include_juce_data_structures.mm in Sources */ = {isa = PBXBuildFile; fileRef = 866919626C3ED25F276FF483 /* include_juce_data_structures.mm */; };
+		4D784793CACA8406C197E802 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D935347416028EE3538945B2 /* CoreAudio.framework */; };
+		4DA9E132525C80EA7D04DD1B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB096D956321087506A37FA /* AudioToolbox.framework */; };
+		6F0B2DCE0C25881C159CD233 /* AudioToMidiProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 953A1252792DC3CCA952EFC5 /* AudioToMidiProcessor.cpp */; };
+		71018E1FF4C4C02DA57540A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D54FA519B143B943D653D7 /* Foundation.framework */; };
+		7B669A1D52B660453134BBDA /* include_juce_graphics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69F8CE1AB1CB6F3E03968342 /* include_juce_graphics.mm */; };
+		8C724933688F0C5DEB36BC40 /* include_juce_audio_processors_ara.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37C6D84F795ECA2BEEDA2E02 /* include_juce_audio_processors_ara.cpp */; };
+		8D6C6F81EBFAD539B4CE92C0 /* MainPluginEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F885BB5412737964B568C51 /* MainPluginEditor.cpp */; };
+		905781985886524746B81DEE /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9767610A0045C2AF2DB096 /* MetalKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9F67BCD506BBC90947AB6047 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B51F65DD3281EDE2238875 /* IOKit.framework */; };
+		A0EF171028A3045459949A85 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0EA838A8127F7BB47C9933 /* Accelerate.framework */; };
+		A3128C2F0B509CEF2E792754 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E8315FBAD9889F431B60D9 /* WebKit.framework */; };
+		AE9DA126801B15668881CC7C /* include_juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 217DFB9B3D5D97734FE191DB /* include_juce_gui_basics.mm */; };
+		B1684737FBD6FD85C501B940 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C1319C9A7193CCE323314C /* Cocoa.framework */; };
+		B6224F1F6DB3322F8267D6EA /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C3E1E6D57B3D5EFCEC002C /* CoreAudioKit.framework */; };
+		BBDD026DD47E85F2E4577306 /* include_juce_audio_processors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08DF918146BF8F70BE0A9986 /* include_juce_audio_processors.mm */; };
+		BE699F25572CCE09D96590BC /* MainPluginProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28DDDDEEA39A5A99D7FA9180 /* MainPluginProcessor.cpp */; };
+		C2C894008689805A5B31B581 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6C8E2E17A850B5251A77FB /* Security.framework */; };
+		C5796D1F99505AAAC959ECA2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14835EE41B1288AF6AA97541 /* QuartzCore.framework */; };
+		D4B3C27CADC7645EB7772553 /* include_juce_core.mm in Sources */ = {isa = PBXBuildFile; fileRef = B2E008E4797D8943B9775ACA /* include_juce_core.mm */; };
+		E23ABBA0AB39DFBE45C463A0 /* include_juce_dsp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F9E74D3EF35E6DCBAE7629E /* include_juce_dsp.mm */; };
+		E36F1646024114419BF97327 /* include_juce_gui_extra.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9E70642F1942255DAC39B4 /* include_juce_gui_extra.mm */; };
+		E37B82542C0C486D00BA3F54 /* TrumpetToMIDI.component in Resources */ = {isa = PBXBuildFile; fileRef = CA863D9AE7B2335022E0939E /* TrumpetToMIDI.component */; };
+		E3D7999A2C0C4DDB009B8952 /* TrumpetToMIDI.component in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA863D9AE7B2335022E0939E /* TrumpetToMIDI.component */; };
+		E8F276C63E7F53D3538FCB1E /* include_juce_audio_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205DB6561EF8350A1375EE05 /* include_juce_audio_utils.mm */; };
+		EB1D1B69E859F61CA4ED5A01 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B33F765291F408367C9986A /* CoreMIDI.framework */; };
+		ECB5B6A9922F4C6D5D5141E5 /* VelocityAndPitchDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DDEE8A26DEDD270A9EDBF13 /* VelocityAndPitchDetection.cpp */; };
+		ECDCC1AF4092065F9D3FCE57 /* include_juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91AD0A7705F2409E74551D0D /* include_juce_audio_basics.mm */; };
+		FB7F0693E78B5A6FBD6D92E1 /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E798FEAC6B3D2C038E02DB /* DiscRecording.framework */; };
+		FE30D0A3F5A31E54ECE54DBD /* include_juce_audio_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = 493D24026AB8BA8AB8309A92 /* include_juce_audio_devices.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E37B824B2C0C370A00BA3F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093C2D4ADAAF67922F3D1B35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0DFF3D60A267299E27D0E9D;
+			remoteInfo = "TrumpetToMIDI - Shared Code";
+		};
+		E37B824C2C0C370A00BA3F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093C2D4ADAAF67922F3D1B35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30FE3334A72A06C2D6355D25;
+			remoteInfo = "TrumpetToMIDI - AU";
+		};
+		E37B824D2C0C370A00BA3F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093C2D4ADAAF67922F3D1B35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0DFF3D60A267299E27D0E9D;
+			remoteInfo = "TrumpetToMIDI - Shared Code";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3D799992C0C4C53009B8952 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "~/Library/Audio/Plug-Ins/Components";
+			dstSubfolderSpec = 0;
+			files = (
+				E3D7999A2C0C4DDB009B8952 /* TrumpetToMIDI.component in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		054483B8E6421919F760FDE3 /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_audio_devices"; sourceTree = "<absolute>"; };
+		08DF918146BF8F70BE0A9986 /* include_juce_audio_processors.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors.mm; path = ../../JuceLibraryCode/include_juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
+		0B33F765291F408367C9986A /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		0F465F3160FC83845B873E1D /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_audio_basics"; sourceTree = "<absolute>"; };
+		14835EE41B1288AF6AA97541 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1638C6F95C0872DDC2E582E1 /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
+		17756BAECE0AE1C726FB8B35 /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_graphics"; sourceTree = "<absolute>"; };
+		17A64D1BD64C21A6AE6C2FD3 /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
+		1BE0E46E5072FE03B7AA1FF9 /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
+		1DB768AF0F358A3E20857157 /* MainPluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPluginProcessor.h; path = ../../Source/MainPluginProcessor.h; sourceTree = SOURCE_ROOT; };
+		205DB6561EF8350A1375EE05 /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
+		20B51F65DD3281EDE2238875 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		217DFB9B3D5D97734FE191DB /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
+		2381F08C88406F4111B9048E /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
+		24E798FEAC6B3D2C038E02DB /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
+		28DDDDEEA39A5A99D7FA9180 /* MainPluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainPluginProcessor.cpp; path = ../../Source/MainPluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		2FBCA1FB3CA6BAB964DDCADD /* juce_gui_extra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_extra; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_gui_extra"; sourceTree = "<absolute>"; };
+		3713347D9CDF5FBA3FA5DDCC /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_lv2_libs.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
+		37C6D84F795ECA2BEEDA2E02 /* include_juce_audio_processors_ara.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_ara.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_ara.cpp; sourceTree = SOURCE_ROOT; };
+		3A1CE1487F8E2155C3BDA723 /* VelocityAndPitchDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VelocityAndPitchDetection.h; path = ../../Source/VelocityAndPitchDetection.h; sourceTree = SOURCE_ROOT; };
+		3F0A53B9E29A8329D1506B73 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		423BD9E45B024620C744619D /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
+		47C1319C9A7193CCE323314C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		493D24026AB8BA8AB8309A92 /* include_juce_audio_devices.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_devices.mm; path = ../../JuceLibraryCode/include_juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
+		4D6C8E2E17A850B5251A77FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		55E8315FBAD9889F431B60D9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		56C3E1E6D57B3D5EFCEC002C /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		5874870EA772D184043FC4CE /* libTrumpetToMIDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrumpetToMIDI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDEE8A26DEDD270A9EDBF13 /* VelocityAndPitchDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = VelocityAndPitchDetection.cpp; path = ../../Source/VelocityAndPitchDetection.cpp; sourceTree = SOURCE_ROOT; };
+		69F8CE1AB1CB6F3E03968342 /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
+		6D7954511C6FD66C83CC1B8D /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_core"; sourceTree = "<absolute>"; };
+		7DB096D956321087506A37FA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7F885BB5412737964B568C51 /* MainPluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainPluginEditor.cpp; path = ../../Source/MainPluginEditor.cpp; sourceTree = SOURCE_ROOT; };
+		8326EAFC1F6C78406C43B08D /* juce_dsp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_dsp; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_dsp"; sourceTree = "<absolute>"; };
+		866919626C3ED25F276FF483 /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
+		91AD0A7705F2409E74551D0D /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
+		953A1252792DC3CCA952EFC5 /* AudioToMidiProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AudioToMidiProcessor.cpp; path = ../../Source/AudioToMidiProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		9F9E74D3EF35E6DCBAE7629E /* include_juce_dsp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_dsp.mm; path = ../../JuceLibraryCode/include_juce_dsp.mm; sourceTree = SOURCE_ROOT; };
+		A314B378DB4BC4923F41261A /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_audio_formats"; sourceTree = "<absolute>"; };
+		A6D54FA519B143B943D653D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A749EB9FDB7A875CBEB62681 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../../JuceLibraryCode/AppConfig.h; sourceTree = SOURCE_ROOT; };
+		B2E008E4797D8943B9775ACA /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		BA236CC57817D18C448EF481 /* AudioToMidiProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioToMidiProcessor.h; path = ../../Source/AudioToMidiProcessor.h; sourceTree = SOURCE_ROOT; };
+		BE82E252C4643F80D40CDBED /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_events"; sourceTree = "<absolute>"; };
+		BE8CE94AE7759E5206D30AD0 /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_gui_basics"; sourceTree = "<absolute>"; };
+		BF619CABB37F8F6F6937E075 /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_audio_processors"; sourceTree = "<absolute>"; };
+		CA863D9AE7B2335022E0939E /* TrumpetToMIDI.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrumpetToMIDI.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0EA838A8127F7BB47C9933 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D935347416028EE3538945B2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F282FC6EDCFAD464442EA881 /* MainPluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainPluginEditor.h; path = ../../Source/MainPluginEditor.h; sourceTree = SOURCE_ROOT; };
+		F5D19A6F224A06F662A58ADF /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_audio_utils"; sourceTree = "<absolute>"; };
+		F82490926F1AAF4221A14F42 /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = "/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules/juce_data_structures"; sourceTree = "<absolute>"; };
+		F8D291292DE7A815504C9EBB /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
+		F9504BBFBEEBC4D5E57A5380 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		FA9E70642F1942255DAC39B4 /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		FE9767610A0045C2AF2DB096 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		895DC26B2AB3C69CFCCB8B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DE6B88D38B31B35CDCC2BA /* AudioUnit.framework in Frameworks */,
+				A0EF171028A3045459949A85 /* Accelerate.framework in Frameworks */,
+				4DA9E132525C80EA7D04DD1B /* AudioToolbox.framework in Frameworks */,
+				B1684737FBD6FD85C501B940 /* Cocoa.framework in Frameworks */,
+				4D784793CACA8406C197E802 /* CoreAudio.framework in Frameworks */,
+				B6224F1F6DB3322F8267D6EA /* CoreAudioKit.framework in Frameworks */,
+				EB1D1B69E859F61CA4ED5A01 /* CoreMIDI.framework in Frameworks */,
+				FB7F0693E78B5A6FBD6D92E1 /* DiscRecording.framework in Frameworks */,
+				71018E1FF4C4C02DA57540A7 /* Foundation.framework in Frameworks */,
+				9F67BCD506BBC90947AB6047 /* IOKit.framework in Frameworks */,
+				C5796D1F99505AAAC959ECA2 /* QuartzCore.framework in Frameworks */,
+				C2C894008689805A5B31B581 /* Security.framework in Frameworks */,
+				A3128C2F0B509CEF2E792754 /* WebKit.framework in Frameworks */,
+				0D1D8BF807DC3F240F3AD1F0 /* Metal.framework in Frameworks */,
+				905781985886524746B81DEE /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1130AEDCD0C7A6AB080E56D4 /* TrumpetToMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				2845CDA68869F57ACB4C67B3 /* Source */,
+			);
+			name = TrumpetToMIDI;
+			sourceTree = "<group>";
+		};
+		2845CDA68869F57ACB4C67B3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				953A1252792DC3CCA952EFC5 /* AudioToMidiProcessor.cpp */,
+				BA236CC57817D18C448EF481 /* AudioToMidiProcessor.h */,
+				7F885BB5412737964B568C51 /* MainPluginEditor.cpp */,
+				F282FC6EDCFAD464442EA881 /* MainPluginEditor.h */,
+				28DDDDEEA39A5A99D7FA9180 /* MainPluginProcessor.cpp */,
+				1DB768AF0F358A3E20857157 /* MainPluginProcessor.h */,
+				5DDEE8A26DEDD270A9EDBF13 /* VelocityAndPitchDetection.cpp */,
+				3A1CE1487F8E2155C3BDA723 /* VelocityAndPitchDetection.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		3D42FC049E4FBB0F8812B59E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F0A53B9E29A8329D1506B73 /* AudioUnit.framework */,
+				CC0EA838A8127F7BB47C9933 /* Accelerate.framework */,
+				7DB096D956321087506A37FA /* AudioToolbox.framework */,
+				47C1319C9A7193CCE323314C /* Cocoa.framework */,
+				D935347416028EE3538945B2 /* CoreAudio.framework */,
+				56C3E1E6D57B3D5EFCEC002C /* CoreAudioKit.framework */,
+				0B33F765291F408367C9986A /* CoreMIDI.framework */,
+				24E798FEAC6B3D2C038E02DB /* DiscRecording.framework */,
+				A6D54FA519B143B943D653D7 /* Foundation.framework */,
+				20B51F65DD3281EDE2238875 /* IOKit.framework */,
+				14835EE41B1288AF6AA97541 /* QuartzCore.framework */,
+				4D6C8E2E17A850B5251A77FB /* Security.framework */,
+				55E8315FBAD9889F431B60D9 /* WebKit.framework */,
+				F9504BBFBEEBC4D5E57A5380 /* Metal.framework */,
+				FE9767610A0045C2AF2DB096 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E56866AF84B43BBEF53EC76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA863D9AE7B2335022E0939E /* TrumpetToMIDI.component */,
+				5874870EA772D184043FC4CE /* libTrumpetToMIDI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F7C58461E8BE73D4508F06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17A64D1BD64C21A6AE6C2FD3 /* Info-AU.plist */,
+				1638C6F95C0872DDC2E582E1 /* RecentFilesMenuTemplate.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6CD9A33BE82A2ED9F81B4083 /* JUCE Library Code */ = {
+			isa = PBXGroup;
+			children = (
+				A749EB9FDB7A875CBEB62681 /* AppConfig.h */,
+				91AD0A7705F2409E74551D0D /* include_juce_audio_basics.mm */,
+				493D24026AB8BA8AB8309A92 /* include_juce_audio_devices.mm */,
+				1BE0E46E5072FE03B7AA1FF9 /* include_juce_audio_formats.mm */,
+				08DF918146BF8F70BE0A9986 /* include_juce_audio_processors.mm */,
+				37C6D84F795ECA2BEEDA2E02 /* include_juce_audio_processors_ara.cpp */,
+				3713347D9CDF5FBA3FA5DDCC /* include_juce_audio_processors_lv2_libs.cpp */,
+				205DB6561EF8350A1375EE05 /* include_juce_audio_utils.mm */,
+				B2E008E4797D8943B9775ACA /* include_juce_core.mm */,
+				866919626C3ED25F276FF483 /* include_juce_data_structures.mm */,
+				9F9E74D3EF35E6DCBAE7629E /* include_juce_dsp.mm */,
+				423BD9E45B024620C744619D /* include_juce_events.mm */,
+				69F8CE1AB1CB6F3E03968342 /* include_juce_graphics.mm */,
+				217DFB9B3D5D97734FE191DB /* include_juce_gui_basics.mm */,
+				FA9E70642F1942255DAC39B4 /* include_juce_gui_extra.mm */,
+				F8D291292DE7A815504C9EBB /* JuceHeader.h */,
+				2381F08C88406F4111B9048E /* JucePluginDefines.h */,
+			);
+			name = "JUCE Library Code";
+			sourceTree = "<group>";
+		};
+		8681E1D94455535C8DA13287 /* JUCE Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0F465F3160FC83845B873E1D /* juce_audio_basics */,
+				054483B8E6421919F760FDE3 /* juce_audio_devices */,
+				A314B378DB4BC4923F41261A /* juce_audio_formats */,
+				BF619CABB37F8F6F6937E075 /* juce_audio_processors */,
+				F5D19A6F224A06F662A58ADF /* juce_audio_utils */,
+				6D7954511C6FD66C83CC1B8D /* juce_core */,
+				F82490926F1AAF4221A14F42 /* juce_data_structures */,
+				8326EAFC1F6C78406C43B08D /* juce_dsp */,
+				BE82E252C4643F80D40CDBED /* juce_events */,
+				17756BAECE0AE1C726FB8B35 /* juce_graphics */,
+				BE8CE94AE7759E5206D30AD0 /* juce_gui_basics */,
+				2FBCA1FB3CA6BAB964DDCADD /* juce_gui_extra */,
+			);
+			name = "JUCE Modules";
+			sourceTree = "<group>";
+		};
+		A0C0D0BCBCDFC3EF086C86F0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1130AEDCD0C7A6AB080E56D4 /* TrumpetToMIDI */,
+				8681E1D94455535C8DA13287 /* JUCE Modules */,
+				6CD9A33BE82A2ED9F81B4083 /* JUCE Library Code */,
+				63F7C58461E8BE73D4508F06 /* Resources */,
+				3D42FC049E4FBB0F8812B59E /* Frameworks */,
+				3E56866AF84B43BBEF53EC76 /* Products */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30FE3334A72A06C2D6355D25 /* TrumpetToMIDI - AU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 361A5BE754F898D7DB57DAFA /* Build configuration list for PBXNativeTarget "TrumpetToMIDI - AU" */;
+			buildPhases = (
+				DEEE55A12C7B0567BAB25B2D /* Resources */,
+				19DED009CA55E62F5EB6CD42 /* Sources */,
+				895DC26B2AB3C69CFCCB8B76 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6D1D982D0E823F24486AF4 /* PBXTargetDependency */,
+			);
+			name = "TrumpetToMIDI - AU";
+			productName = TrumpetToMIDI;
+			productReference = CA863D9AE7B2335022E0939E /* TrumpetToMIDI.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E0DFF3D60A267299E27D0E9D /* TrumpetToMIDI - Shared Code */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB85401DD96C9EF0B68070A5 /* Build configuration list for PBXNativeTarget "TrumpetToMIDI - Shared Code" */;
+			buildPhases = (
+				09D76DF04123432CA46D60D5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrumpetToMIDI - Shared Code";
+			productName = TrumpetToMIDI;
+			productReference = 5874870EA772D184043FC4CE /* libTrumpetToMIDI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		093C2D4ADAAF67922F3D1B35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = TTM;
+				TargetAttributes = {
+					30FE3334A72A06C2D6355D25 = {
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					E0DFF3D60A267299E27D0E9D = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					EAB46B64840539EEDAA415C8 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1CC969C39467523175DD62F0 /* Build configuration list for PBXProject "TrumpetToMIDI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0C0D0BCBCDFC3EF086C86F0 /* Source */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAB46B64840539EEDAA415C8 /* TrumpetToMIDI - All */,
+				30FE3334A72A06C2D6355D25 /* TrumpetToMIDI - AU */,
+				E0DFF3D60A267299E27D0E9D /* TrumpetToMIDI - Shared Code */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEEE55A12C7B0567BAB25B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B8831F73D148384B59EB8E /* RecentFilesMenuTemplate.nib in Resources */,
+				E37B82542C0C486D00BA3F54 /* TrumpetToMIDI.component in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09D76DF04123432CA46D60D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0B2DCE0C25881C159CD233 /* AudioToMidiProcessor.cpp in Sources */,
+				8D6C6F81EBFAD539B4CE92C0 /* MainPluginEditor.cpp in Sources */,
+				BE699F25572CCE09D96590BC /* MainPluginProcessor.cpp in Sources */,
+				ECB5B6A9922F4C6D5D5141E5 /* VelocityAndPitchDetection.cpp in Sources */,
+				ECDCC1AF4092065F9D3FCE57 /* include_juce_audio_basics.mm in Sources */,
+				FE30D0A3F5A31E54ECE54DBD /* include_juce_audio_devices.mm in Sources */,
+				1D4DAFD3F1074920FEBC7AF5 /* include_juce_audio_formats.mm in Sources */,
+				BBDD026DD47E85F2E4577306 /* include_juce_audio_processors.mm in Sources */,
+				8C724933688F0C5DEB36BC40 /* include_juce_audio_processors_ara.cpp in Sources */,
+				38046AFC5249D4E10C11AF09 /* include_juce_audio_processors_lv2_libs.cpp in Sources */,
+				E8F276C63E7F53D3538FCB1E /* include_juce_audio_utils.mm in Sources */,
+				D4B3C27CADC7645EB7772553 /* include_juce_core.mm in Sources */,
+				3FEB56715D005C8825962CEB /* include_juce_data_structures.mm in Sources */,
+				E23ABBA0AB39DFBE45C463A0 /* include_juce_dsp.mm in Sources */,
+				0302CEE7BAF0245A292BBA85 /* include_juce_events.mm in Sources */,
+				7B669A1D52B660453134BBDA /* include_juce_graphics.mm in Sources */,
+				AE9DA126801B15668881CC7C /* include_juce_gui_basics.mm in Sources */,
+				E36F1646024114419BF97327 /* include_juce_gui_extra.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DED009CA55E62F5EB6CD42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F6D1D982D0E823F24486AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0DFF3D60A267299E27D0E9D /* TrumpetToMIDI - Shared Code */;
+			targetProxy = E37B824B2C0C370A00BA3F54 /* PBXContainerItemProxy */;
+		};
+		6921F66DA09F79B582E43BC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30FE3334A72A06C2D6355D25 /* TrumpetToMIDI - AU */;
+			targetProxy = E37B824C2C0C370A00BA3F54 /* PBXContainerItemProxy */;
+		};
+		92D5024CC103BDBA9FC848FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0DFF3D60A267299E27D0E9D /* TrumpetToMIDI - Shared Code */;
+			targetProxy = E37B824D2C0C370A00BA3F54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DB801566E5A7DC67F32597D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_NAME = TrumpetToMIDI;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		13AF22D6CDAEA7D53B5CF625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = Shared_Code.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode \"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTM.TrumpetToMIDI;
+				PRODUCT_NAME = TrumpetToMIDI;
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		351F84F04C9867166E61D4F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = AU.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-AU.plist";
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode \"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-lTrumpetToMIDI",
+				);
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTM.TrumpetToMIDI;
+				PRODUCT_NAME = TrumpetToMIDI;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYMROOT = "$(BUILD_DIR)/$(CONFIGURATION)";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		41E8472759FCED3F193C1F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = Shared_Code.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode \"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTM.TrumpetToMIDI;
+				PRODUCT_NAME = TrumpetToMIDI;
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		BB7A55008B9D7278F1E8A920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = AU.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-AU.plist";
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode \"/Users/Anthony to Tonka File Transfer/Downloads/JUCE/modules\"";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-lTrumpetToMIDI",
+				);
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTM.TrumpetToMIDI;
+				PRODUCT_NAME = TrumpetToMIDI;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYMROOT = "$(BUILD_DIR)/$(CONFIGURATION)";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+		D4DA7ECE13DBD41893F6344D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_NAME = TrumpetToMIDI;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		E0A70E88FC9E2BC354430BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTM.TrumpetToMIDI;
+				SDKROOT = macosx;
+				SYMROOT = "/Library/Audio/Plug-Ins/Components";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+		FCFCE1AF8763B466BC9D4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTM.TrumpetToMIDI;
+				SDKROOT = macosx;
+				SYMROOT = "/Library/Audio/Plug-Ins/Components";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CC969C39467523175DD62F0 /* Build configuration list for PBXProject "TrumpetToMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB801566E5A7DC67F32597D /* Debug */,
+				D4DA7ECE13DBD41893F6344D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		361A5BE754F898D7DB57DAFA /* Build configuration list for PBXNativeTarget "TrumpetToMIDI - AU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351F84F04C9867166E61D4F2 /* Debug */,
+				BB7A55008B9D7278F1E8A920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97EBC9FFD4263D99A003655C /* Build configuration list for PBXAggregateTarget "TrumpetToMIDI - All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFCE1AF8763B466BC9D4679 /* Debug */,
+				E0A70E88FC9E2BC354430BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB85401DD96C9EF0B68070A5 /* Build configuration list for PBXNativeTarget "TrumpetToMIDI - Shared Code" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E8472759FCED3F193C1F56 /* Debug */,
+				13AF22D6CDAEA7D53B5CF625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 093C2D4ADAAF67922F3D1B35 /* Project object */;
+}
